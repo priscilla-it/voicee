@@ -8,19 +8,29 @@ from loguru import logger
 from src.config import BotSettings
 from src.db_infra import models
 
-ALL_TABLES = [data for _, data in inspect.getmembers(models) if isinstance(data, peewee.ModelBase)]
+ALL_TABLES = [
+    data
+    for _, data in inspect.getmembers(models)
+    if isinstance(data, peewee.ModelBase)
+]
 
 
-def _dev_drop_tables(database: peewee_async.PooledPostgresqlDatabase, tables: list[peewee.ModelBase]) -> None:
+def _dev_drop_tables(
+    database: peewee_async.PooledPostgresqlDatabase,
+    tables: list[peewee.ModelBase],
+) -> None:
     with database:
         database.drop_tables(tables, safe=True)
-    logger.info("Tables dropped")
+    logger.info('Tables dropped')
 
 
-def _create_tables(database: peewee_async.PooledPostgresqlDatabase, tables: list[peewee.ModelBase]) -> None:
+def _create_tables(
+    database: peewee_async.PooledPostgresqlDatabase,
+    tables: list[peewee.ModelBase],
+) -> None:
     with database:
         database.create_tables(tables, safe=True)
-    logger.info("Tables created")
+    logger.info('Tables created')
 
 
 def _make_migrations(database: peewee_async.PooledPostgresqlDatabase) -> None:
@@ -32,9 +42,9 @@ def _make_migrations(database: peewee_async.PooledPostgresqlDatabase) -> None:
                 # migrator.drop_not_null("users", "name"),  # noqa: ERA001
                 # migrator.alter_column_type("users", "social_id", peewee.BigIntegerField(null=False)),  # noqa: ERA001
             )
-        logger.info("Tables migrated")
+        logger.info('Tables migrated')
     except peewee.ProgrammingError as e:
-        logger.exception(f"Tables migrating error: {str(e)}")
+        logger.exception(f'Tables migrating error: {str(e)}')
 
 
 def setup_db(settings: BotSettings) -> peewee_async.Manager:

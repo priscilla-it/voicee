@@ -16,7 +16,7 @@ class DbDispatcher(Dispatcher):  # type: ignore[misc]
 
 
 class AbsFilter(BoundFilter):  # type: ignore[misc]
-    key = "key"
+    key = 'key'
 
     def __init__(self, **kwargs):  # type: ignore[no-untyped-def]
         setattr(self, self.key, kwargs[self.key])

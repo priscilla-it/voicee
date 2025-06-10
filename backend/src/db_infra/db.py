@@ -37,12 +37,17 @@ async def get_user(*, tg_user: TgUser) -> Users | None:
 
 async def create_user(*, tg_user: TgUser) -> None:
     await _get_conn().create(
-        Users, social_id=tg_user.tg_id, username=tg_user.username, registration_date=datetime.now()  # noqa: DTZ005
+        Users,
+        social_id=tg_user.tg_id,
+        username=tg_user.username,
+        registration_date=datetime.now(),  # noqa: DTZ005
     )
-    logger.info(f"New user[{tg_user.username}] registered")
+    logger.info(f'New user[{tg_user.username}] registered')
 
 
-async def update_user_info(*, tg_user: TgUser, user_form_data: UserFormData) -> None:
+async def update_user_info(
+    *, tg_user: TgUser, user_form_data: UserFormData
+) -> None:
     user = await get_user(tg_user=tg_user)
     if user is not None:
         user.name = user_form_data.name
@@ -59,4 +64,6 @@ async def incr_user_taps(*, tg_user: TgUser) -> None:
 
 
 async def get_all_users() -> list[Users]:
-    return list(await _get_conn().execute(Users.select().order_by(Users.taps.desc())))
+    return list(
+        await _get_conn().execute(Users.select().order_by(Users.taps.desc()))
+    )

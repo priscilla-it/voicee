@@ -8,5 +8,9 @@ from src.config import settings
 if settings.environment.local_test:
     storage = MemoryStorage()
 else:
-    storage = RedisStorage2(settings.fsm_redis_host, db=settings.fsm_redis_db, password=settings.fsm_redis_pass)
+    storage = RedisStorage2(
+        settings.fsm_redis_host,
+        db=settings.fsm_redis_db,
+        password=settings.fsm_redis_pass,
+    )
 dp = DbDispatcher(Bot(token=settings.tg_bot_token), storage=storage)  # type: ignore[no-untyped-call]

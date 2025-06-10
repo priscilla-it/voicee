@@ -8,14 +8,16 @@ from pydantic import BaseModel
 
 class ClassWithRepr:
     def __repr__(self) -> str:
-        attrs = ", ".join(f"{k}={repr(v)}" for k, v in self.__dict__.items() if v is not None)
-        return f"{type(self).__name__}({attrs})"
+        attrs = ', '.join(
+            f'{k}={repr(v)}' for k, v in self.__dict__.items() if v is not None
+        )
+        return f'{type(self).__name__}({attrs})'
 
 
 @dataclass
 class TgUtils:
-    dog: str = "@"
-    t_me_link: str = "https://t.me/"
+    dog: str = '@'
+    t_me_link: str = 'https://t.me/'
 
 
 class TgUser(BaseModel):
@@ -59,7 +61,8 @@ class Feature(ClassWithRepr):
         one_time_keyboard: bool = False,
         callback_action: str | None = None,
         data_key: str | None = None,
-        menu: FeatureMenu | None = None,  # need attrs: self.button, self.slashed_command and self.about
+        menu: FeatureMenu
+        | None = None,  # need attrs: self.button, self.slashed_command and self.about
         set_to_bot_commands: bool = False,  # need attrs: self.slashed_command and self.slashed_command_descr
     ):
         self.text = text
@@ -67,7 +70,7 @@ class Feature(ClassWithRepr):
         self.about = about
         self.error = error
         self.help_text = help_text
-        self.emoji = emoji if emoji is not None else ""
+        self.emoji = emoji if emoji is not None else ''
         self.slashed_command = slashed_command
         self.slashed_command_descr = slashed_command_descr
         self.button = button
@@ -81,22 +84,35 @@ class Feature(ClassWithRepr):
 
         if self.menu is not None:
             if self.keyboard is not None:
-                raise AttributeError("Only one attribute may be set: keyboard or menu_grid")
-            self.keyboard = [[Button(text=ftr.button) for ftr in row] for row in self.menu.grid]
-            self.menu.text = "\n".join(f"{ftr.menu_line()}" for row in self.menu.grid for ftr in row)
+                raise AttributeError(
+                    'Only one attribute may be set: keyboard or menu_grid'
+                )
+            self.keyboard = [
+                [Button(text=ftr.button) for ftr in row]
+                for row in self.menu.grid
+            ]
+            self.menu.text = '\n'.join(
+                f'{ftr.menu_line()}' for row in self.menu.grid for ftr in row
+            )
 
         if set_to_bot_commands:
             if not (self.slashed_command and self.slashed_command_descr):
-                raise AttributeError("slashed_command and slashed_command_descr fields must be set")
+                raise AttributeError(
+                    'slashed_command and slashed_command_descr fields must be set'
+                )
             self.commands_to_set.append(self)
 
     def find_triggers(self, message: types.Message) -> bool:
-        return message.text and any(i in message.text.lower() for i in self.triggers)
+        return message.text and any(
+            i in message.text.lower() for i in self.triggers
+        )
 
     def menu_line(self) -> str:
         if self.slashed_command is None or self.about is None:
-            raise AttributeError("Menu line need attrs: slashed_command and about")
-        return f"{self.emoji}{self.slashed_command} — {self.about}"
+            raise AttributeError(
+                'Menu line need attrs: slashed_command and about'
+            )
+        return f'{self.emoji}{self.slashed_command} — {self.about}'
 
     @property
     def triggers(self) -> list[str]:
@@ -130,21 +146,34 @@ class Feature(ClassWithRepr):
     ) -> types.ReplyKeyboardMarkup | types.ReplyKeyboardRemove:
         if not input_kb:
             return types.ReplyKeyboardRemove()
-        res_kb = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=one_time_keyboard)
+        res_kb = types.ReplyKeyboardMarkup(
+            resize_keyboard=True, one_time_keyboard=one_time_keyboard
+        )
         for row in input_kb:
             res_kb.row(*[str(btn.text) for btn in row])
         return res_kb
 
     @staticmethod
-    def create_tg_inline_kb(input_kb: list[list[InlineButton]]) -> types.InlineKeyboardMarkup:
+    def create_tg_inline_kb(
+        input_kb: list[list[InlineButton]],
+    ) -> types.InlineKeyboardMarkup:
         res_kb = types.InlineKeyboardMarkup()
         for row in input_kb:
-            res_kb.row(*[types.InlineKeyboardButton(btn.text, callback_data=btn.callback_data) for btn in row])
+            res_kb.row(
+                *[
+                    types.InlineKeyboardButton(
+                        btn.text, callback_data=btn.callback_data
+                    )
+                    for btn in row
+                ]
+            )
         return res_kb
 
     @staticmethod
     def text_cutter(text: str, text_size: int) -> list[str]:
-        return [text[x : x + text_size] for x in range(0, len(text), text_size)]
+        return [
+            text[x : x + text_size] for x in range(0, len(text), text_size)
+        ]
 
     @classmethod
     def tg_msg_text_split(cls, text: str) -> list[str]:
@@ -152,4 +181,4 @@ class Feature(ClassWithRepr):
 
     @staticmethod
     def tg_get_username(text: str) -> str:
-        return text.replace(TgUtils.dog, "").replace(TgUtils.t_me_link, "")
+        return text.replace(TgUtils.dog, '').replace(TgUtils.t_me_link, '')
