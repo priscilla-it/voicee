@@ -2,6 +2,8 @@ from aiogram import Dispatcher, types
 from aiogram.dispatcher.filters import BoundFilter
 from peewee_async import Manager
 
+from typing import Literal
+
 
 class DbDispatcher(Dispatcher):  # type: ignore[misc]
     def __init__(self, *args, **kwargs):  # type: ignore[no-untyped-def]
@@ -21,5 +23,5 @@ class AbsFilter(BoundFilter):  # type: ignore[misc]
     def __init__(self, **kwargs):  # type: ignore[no-untyped-def]
         setattr(self, self.key, kwargs[self.key])
 
-    async def check(self, msg: types.Message) -> bool:
+    async def check(self, msg: types.Message) -> Literal[True]:
         return True
