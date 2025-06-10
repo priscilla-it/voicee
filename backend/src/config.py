@@ -20,7 +20,7 @@ class BotSettings(BaseSettings):
     REDIS_PASS: str
 
     INLINE_KB_BUTTON_ROW_WIDTH: int = 2
-    SCHEDULE_HEALTHCHECK: str = '7:00'  # !!!UTC timezone!!!
+    SCHEDULE_HEALTHCHECK: str = '7:00'  # UTC timezone
 
     class Config:
         env_file = '../../.env'
