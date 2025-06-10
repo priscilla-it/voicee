@@ -1,36 +1,29 @@
-from enum import Enum
-
 from pydantic import BaseSettings
 
 
-class Envs(Enum):
-    local_test = "local_test"
-    stage = "stage"
-    prod = "prod"
-
-
 class BotSettings(BaseSettings):
-    tg_bot_token: str
+    ENVIRONMENT: str = 'development'
 
-    postgres_db: str | None
-    postgres_user: str | None
-    postgres_password: str | None
-    postgres_host: str | None
+    TELEGRAM_BOT_TOKEN: str
 
-    fsm_redis_host: str | None
-    fsm_redis_db: int | None
-    fsm_redis_pass: str | None
+    REGISTER_PASSPHRASE: str
+    CREATOR_ID: str
 
-    register_passphrase: str | None
-    creator_id: int | None
+    POSTGRES_HOST: str = 'postgresql'
+    POSTGRES_PORT: str = '5432'
+    POSTGRES_USER: str = 'postgres'
+    POSTGRES_PASSWORD: str
+    POSTGRES_DB: str = 'app'
 
-    environment: Envs = Envs.local_test
+    REDIS_HOST: str = 'redis'
+    REDIS_PORT: str = '6379'
+    REDIS_PASS: str
 
-    inline_kb_button_row_width: int = 2
-    schedule_healthcheck: str = "7:00"  # !!!UTC timezone!!!
+    INLINE_KB_BUTTON_ROW_WIDTH: int = 2
+    SCHEDULE_HEALTHCHECK: str = '7:00'  # !!!UTC timezone!!!
 
     class Config:
-        env_file = ".env"
+        env_file = '../../.env'
 
 
 settings = BotSettings()
