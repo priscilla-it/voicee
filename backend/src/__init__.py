@@ -2,8 +2,8 @@ from aiogram import Bot
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.contrib.fsm_storage.redis import RedisStorage2
 
-from tg_bot_template.bot_lib.aiogram_overloads import DbDispatcher
-from tg_bot_template.config import settings
+from src.bot_lib.aiogram_overloads import DbDispatcher
+from src.config import settings
 
 if settings.environment.local_test:
     storage = MemoryStorage()

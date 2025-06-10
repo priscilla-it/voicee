@@ -1,9 +1,9 @@
 from aiogram import types
 
-from tg_bot_template.bot_lib.aiogram_overloads import AbsFilter
-from tg_bot_template.bot_lib.bot_feature import TgUser
-from tg_bot_template.config import settings
-from tg_bot_template.db_infra.db import check_user_registered
+from src.bot_lib.aiogram_overloads import AbsFilter
+from src.bot_lib.bot_feature import TgUser
+from src.config import settings
+from src.db_infra.db import check_user_registered
 
 
 class CreatorFilter(AbsFilter):

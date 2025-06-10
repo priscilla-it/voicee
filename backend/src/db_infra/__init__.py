@@ -5,8 +5,8 @@ import peewee_async
 import playhouse.migrate
 from loguru import logger
 
-from tg_bot_template.config import BotSettings
-from tg_bot_template.db_infra import models
+from src.config import BotSettings
+from src.db_infra import models
 
 ALL_TABLES = [data for _, data in inspect.getmembers(models) if isinstance(data, peewee.ModelBase)]
 

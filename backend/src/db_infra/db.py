@@ -5,10 +5,10 @@ from aiocache.serializers import PickleSerializer
 from loguru import logger
 from peewee_async import Manager
 
-from tg_bot_template import dp
-from tg_bot_template.bot_infra.states import UserFormData
-from tg_bot_template.bot_lib.bot_feature import TgUser
-from tg_bot_template.db_infra.models import Users
+from src import dp
+from src.bot_infra.states import UserFormData
+from src.bot_lib.bot_feature import TgUser
+from src.db_infra.models import Users
 
 
 def _get_conn() -> Manager:
