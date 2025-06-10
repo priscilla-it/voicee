@@ -3,6 +3,7 @@ services:
   postgresql:
     image: postgres:17-alpine
     restart: unless-stopped
+    hostname: ${POSTGRES_HOST}
     ports:
       - "5432:5432"
     volumes:
@@ -22,6 +23,7 @@ services:
   redis:
     image: redis:7-alpine
     restart: unless-stopped
+    hostname: ${REDIS_HOST}
     ports:
       - "6379:6379"
     command: redis-server --requirepass "${FSM_REDIS_PASS:-}"
@@ -37,10 +39,13 @@ services:
 
   voicee_bot:
     container_name: voicee_bot
+    hostname: voicee_bot
     restart: unless-stopped
     build: .
     env_file:
       - .env
     depends_on:
-      - redis
-      - postgresql
+      redis:
+        condition: service_healthy
+      postgresql:
+        condition: service_healthy
