@@ -1,16 +1,6 @@
 ---
 services:
 
-  redis:
-    env_file: .env.dev
-    hostname: ${REDIS_HOST}
-    command: redis-server --requirepass "${REDIS_PASS:-}"
-    ports:
-      - "6379:6379"
-    networks:
-      - dev-backend
-
-
   postgresql:
     env_file: .env.dev
     hostname: ${POSTGRES_HOST}
@@ -21,6 +11,16 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
     ports:
       - "5432:5432"
+    networks:
+      - dev-backend
+
+
+  redis:
+    env_file: .env.dev
+    hostname: ${REDIS_HOST}
+    command: redis-server --requirepass "${REDIS_PASS:-}"
+    ports:
+      - "6379:6379"
     networks:
       - dev-backend
 

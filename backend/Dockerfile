@@ -1,3 +1,5 @@
+# TODO: add alembic migration on startup
+
 ### Builder Stage
 FROM alpine:latest AS builder
 
