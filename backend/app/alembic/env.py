@@ -4,7 +4,7 @@ from sqlalchemy import pool
 from alembic import context
 
 
-target_metadata = [Base.metadata] # TODO: Add Base from db.py
+target_metadata = [Base.metadata]  # TODO: Add Base from db.py
 config = context.config
 
 if config.config_file_name is not None:

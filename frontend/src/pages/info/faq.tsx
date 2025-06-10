@@ -2,7 +2,6 @@ import { FC, useState } from 'react'
 
 import '../../styles/globals.css'
 import NavBar from '../../components/navbar'
-import Footer from '../../components/footer'
 import { Faq } from '../../constants/text'
 
 interface FAQItemProps {
