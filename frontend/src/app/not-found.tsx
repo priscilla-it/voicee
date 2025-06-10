@@ -33,11 +33,11 @@ export default function NotFound() {
 
       <footer className="flex justify-center p-4 bg-black">
         <a
-          href="mailto:priscilla.effects@gmail.com"
+          href="mailto:hello@voicee.ru"
           className="text-center text-white text-2xl hover:underline"
           aria-label="Contact us via email"
         >
-          Contact us at priscilla.effects@gmail.com
+          Contact us at hello@voicee.ru
         </a>
       </footer>
     </>
