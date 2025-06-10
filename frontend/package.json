@@ -1,0 +1,32 @@
+{
+  "name": "voicee",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack -p 3000",
+    "start": "next start -p 50160",
+    "build": "next build"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.5.0",
+    "next": "15.2.4",
+    "next-seo": "^6.8.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
+    "swr": "^2.3.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
+    "@types/node": "^22.15.30",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.6",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.8.3"
+  }
+}
