@@ -31,10 +31,10 @@ COPY pyproject.toml uv.lock ./
 RUN --mount=type=cache,target=/root/.cache/uv \
     --mount=type=bind,source=uv.lock,target=uv.lock \
     --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
-    uv sync --frozen --no-install-project --no-group lint
+    uv sync --frozen --no-install-project
 COPY . .
 RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --frozen --no-group lint
+    uv sync --frozen
 
 
 ### Development Stage
@@ -68,10 +68,10 @@ RUN apk add --no-cache \
 WORKDIR /app
 COPY pyproject.toml uv.lock ./
 RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --frozen --no-install-project --no-group lint
+    uv sync --frozen --no-install-project
 COPY . .
 RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --frozen --no-group lint
+    uv sync --frozen
 
 # run dev
 CMD ["uv", "run", "src/main.py"]
