@@ -13,7 +13,36 @@ This project implements a Telegram bot using Aiogram 3.x with PostgreSQL databas
 - Structured logging with Loguru
 - Web interface using Next.js for enhanced user interaction
 
-## Installation
+## Setup
+
+### Development Build
+
+To set up the development environment, run:
+
 ```bash
-make
+make dev
+```
+
+### Production Build
+
+To set up the production environment, run:
+
+```bash
+make prod
+```
+
+### Stopping All Containers
+
+To stop all running containers, execute:
+
+```bash
+make prod
+```
+
+### Deep Cleaning Environment
+
+To clean all, execute:
+
+```bash
+make clean
 ```
