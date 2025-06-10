@@ -36,7 +36,7 @@ make prod
 To stop all running containers, execute:
 
 ```bash
-make prod
+make stop
 ```
 
 ### Deep Cleaning Environment
