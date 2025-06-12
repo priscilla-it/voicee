@@ -71,5 +71,5 @@ COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
 
 # run prod
-EXPOSE 50160
+EXPOSE 60808
 CMD ["pnpm", "start"]

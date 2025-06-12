@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack -p 3000",
-    "start": "next start -p 50160",
+    "start": "next start -p 60808",
     "build": "next build"
   },
   "dependencies": {

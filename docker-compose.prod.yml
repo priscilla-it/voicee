@@ -2,57 +2,62 @@
 services:
 
   postgresql:
-    env_file: .env.dev
+    env_file: .env
     hostname: ${POSTGRES_HOST}
     environment:
+      POSTGRES_HOST_AUTH_METHOD: scram-sha-256
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
+    ports:
+      - "${POSTGRES_PORT}:5432"
     networks:
-      - dev-backend
+      - prod-backend
 
 
   redis:
     env_file: .env
     hostname: ${REDIS_HOST}
-    command: redis-server --requirepass "${REDIS_PASS:-}"
+    command: redis-server --requirepass "${REDIS_PASS}"
+    ports:
+      - "${REDIS_PORT}:6379"
     networks:
-      - dev-backend
+      - prod-backend
 
 
   backend:
-    env_file: .env.dev
+    env_file: .env
     build:
-      target: development
+      target: production
     volumes:
       - ./backend:/app
     ports:
-      - "3030:3030"
+      - "${BACKEND_PORT}:60707"
     networks:
-      - dev-backend
+      - prod-backend
 
 
   frontend:
-    env_file: .env.dev
+    env_file: .env
     build:
-      target: development
+      target: production
     volumes:
       - ./frontend:/app
       - /app/node_modules
     environment:
       - node_env=development
     ports:
-      - "3000:3000"
+      - "${FRONTEND_PORT}:60808"
     depends_on:
       backend:
         condition: service_started
     networks:
-      - dev-frontend
-      - dev-backend
+      - prod-frontend
+      - prod-backend
 
 
 networks:
-  dev-frontend:
+  prod-frontend:
     internal: false
-  dev-backend:
+  prod-backend:
     internal: false

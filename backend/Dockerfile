@@ -76,6 +76,7 @@ RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync --frozen
 
 # run dev
+EXPOSE 3030
 CMD ["uv", "run", "src/main.py"]
 
 
@@ -101,4 +102,5 @@ COPY --from=builder /root/.local/bin/uv /usr/local/bin/uv
 COPY --from=builder /app /app
 
 # run prod
+EXPOSE 60707
 CMD ["uv", "run", "src/main.py"]
