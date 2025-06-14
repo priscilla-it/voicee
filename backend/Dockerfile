@@ -1,5 +1,3 @@
-# TODO: add alembic migration on startup
-
 ### Builder Stage
 FROM alpine:latest AS builder
 
@@ -103,4 +101,5 @@ COPY --from=builder /app /app
 
 # run prod
 EXPOSE 60707
+RUN uv run alembic upgrade head
 CMD ["uv", "run", "src/main.py"]
