@@ -1,7 +1,7 @@
 import multiprocessing
 
 # Listen on all network interfaces
-bind = '0.0.0.0:50150'
+bind = '0.0.0.0:60707'
 
 # Optimal worker count formula for CPU-bound applications
 workers = (2 * multiprocessing.cpu_count()) + 1

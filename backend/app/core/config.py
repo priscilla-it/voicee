@@ -37,6 +37,7 @@ class BotSettings(BaseSettings):
     REDIS_PASS: str
 
     # BACKEND
+    PROJECT_NAME: str = 'API'
     API_V1_STR: str = '/v1'
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 8
     SECRET_KEY: str = Field(default_factory=secrets.token_urlsafe)
@@ -44,6 +45,7 @@ class BotSettings(BaseSettings):
 
     # FRONTEND
     FRONTEND_PORT: int = 3000
+    DOMAIN: str = 'temnomor.ru'
 
 
 settings = BotSettings()

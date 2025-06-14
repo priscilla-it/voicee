@@ -2,10 +2,12 @@ from logging.config import fileConfig
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 from alembic import context
+from ..app.database.db import Base
 
 
-target_metadata = [Base.metadata]  # TODO: Add Base from db.py
+target_metadata = [Base.metadata]
 config = context.config
+
 
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)

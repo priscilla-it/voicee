@@ -73,9 +73,12 @@ COPY . .
 RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync --frozen
 
+# alembic migration
+CMD ["sh", "-c", "uv run alembic upgrade head"]
+
 # run dev
 EXPOSE 3030
-CMD ["uv", "run", "src/main.py"]
+CMD ["uv", "run", "app/main.py"]
 
 
 ### Production Stage
@@ -99,7 +102,9 @@ COPY --from=builder /python /python
 COPY --from=builder /root/.local/bin/uv /usr/local/bin/uv
 COPY --from=builder /app /app
 
+# alembic migration
+CMD ["sh", "-c", "uv run alembic upgrade head"]
+
 # run prod
 EXPOSE 60707
-RUN uv run alembic upgrade head
-CMD ["uv", "run", "src/main.py"]
+CMD ["uv", "run", "app/main.py"]

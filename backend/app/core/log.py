@@ -30,4 +30,4 @@ def set_logger(
     )
 
 
-set_logger()
+log = set_logger()
