@@ -1,48 +1,28 @@
-# Aiogram Bot with PostgreSQL via Async SQLAlchemy and Alembic
+# Telegram Bot / Web UI with PostgreSQL and Async SQLAlchemy (alembic)
 
-## Overview
-This project implements a Telegram bot using Aiogram 3.x with PostgreSQL database integration through async SQLAlchemy and Alembic for database migrations.
+## System Architecture
 
-## Features
-- Async Aiogram 3.x implementation
-- PostgreSQL database with async SQLAlchemy
-- Alembic for database migrations
-- APScheduler for background tasks
-- Redis-based caching
-- Pydantic configuration management
-- Structured logging with Loguru
-- Web interface using Next.js for enhanced user interaction
+![diagram](docs/img/diagram.svg)
 
-## Setup
+## Feature Overview
 
-### Development Build
+| Component         | Technology  | Purpose                                                    |
+| ----------------- | ----------- | ---------------------------------------------------------- |
+| **Bot Framework** | Aiogram     | Asynchronous Telegram Bot API implementation               |
+| **Database**      | PostgreSQL  | Relational data storage with ACID compliance               |
+| **ORM**           | SQLAlchemy  | Async database operations and modeling                     |
+| **Migrations**    | Alembic     | Database schema version control and migration management   |
+| **Scheduling**    | APScheduler | Background task execution (reminders, notifications)       |
+| **Caching**       | Redis       | High-performance in-memory data caching                    |
+| **Configuration** | Pydantic    | Type-safe settings management with .env support            |
+| **Logging**       | Loguru      | Structured logging with rich formatting and file rotation  |
+| **Web Interface** | Next.js     | Modern React framework for admin panel and user dashboards |
 
-To set up the development environment, run:
+## Setup Commands
 
-```bash
-make dev
-```
-
-### Production Build
-
-To set up the production environment, run:
-
-```bash
-make prod
-```
-
-### Stopping All Containers
-
-To stop all running containers, execute:
-
-```bash
-make stop
-```
-
-### Deep Cleaning Environment
-
-To clean all, execute:
-
-```bash
-make clean
-```
+| Command      | Action                            |
+| ------------ | --------------------------------- |
+| `make dev`   | Start development environment     |
+| `make prod`  | Start production deployment       |
+| `make stop`  | Stop all containers               |
+| `make clean` | Remove all containers and volumes |

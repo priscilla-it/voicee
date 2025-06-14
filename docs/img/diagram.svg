@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="296.99997mm"
+   height="210mm"
+   viewBox="0 0 1122.5196 793.70081"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.81067621"
+     inkscape:cx="712.98503"
+     inkscape:cy="449.00787"
+     inkscape:window-width="1914"
+     inkscape:window-height="1050"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer4">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="1122.5197"
+       height="793.70081"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker48"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path48" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ArrowWideRounded"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path2" />
+    </marker>
+    <rect
+       x="122.11404"
+       y="87.224319"
+       width="312.60202"
+       height="104.66918"
+       id="rect43" />
+    <rect
+       x="466.77167"
+       y="349.60632"
+       width="188.97636"
+       height="94.48819"
+       id="rect4" />
+    <rect
+       x="466.77167"
+       y="349.60632"
+       width="188.97636"
+       height="94.48819"
+       id="rect4-2-0-2" />
+    <rect
+       x="466.77167"
+       y="349.60632"
+       width="188.97636"
+       height="94.48819"
+       id="rect4-2-9-4" />
+    <rect
+       x="466.77167"
+       y="349.60632"
+       width="188.97636"
+       height="94.48819"
+       id="rect4-2-0-2-9" />
+    <rect
+       x="466.77167"
+       y="349.60632"
+       width="188.97636"
+       height="94.48819"
+       id="rect4-2-9-4-2" />
+    <rect
+       x="122.11404"
+       y="87.224319"
+       width="312.60202"
+       height="104.66918"
+       id="rect43-2" />
+    <marker
+       style="overflow:visible"
+       id="ArrowWideRounded-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path2-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker48-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path48-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ArrowWideRounded-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path2-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker48-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path48-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ArrowWideRounded-7-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path2-7-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker48-1-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, rounded arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path48-1-5" />
+    </marker>
+  </defs>
+  <rect
+     style="fill:#ffffff;stroke:#000000;stroke-width:0.755906;paint-order:stroke fill markers"
+     id="rect1"
+     width="1122.5197"
+     height="793.70081"
+     x="0"
+     y="0"
+     sodipodi:insensitive="true" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Layer 4"
+     style="display:inline">
+    <rect
+       style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.00157;stroke-dasharray:4.00628, 4.00628;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect12"
+       width="467.51096"
+       height="793.70081"
+       x="-32.794891"
+       y="2.0791311e-05" />
+    <rect
+       style="display:inline;fill:none;fill-rule:nonzero;stroke:none;stroke-width:1.88976;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect13"
+       width="687.7912"
+       height="793.67609"
+       x="434.71606"
+       y="0.012370684" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.88976;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#ArrowWideRounded);marker-end:url(#marker48)"
+       d="m 732.37596,346.81186 97.03088,-95.71234"
+       id="path47"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.87775;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#ArrowWideRounded-6);marker-end:url(#marker48-5)"
+       d="M 828.16572,542.91135 732.26313,447.30019"
+       id="path47-0"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.33783;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#ArrowWideRounded-7);marker-end:url(#marker48-1)"
+       d="m 332.21724,304.16219 203.31857,69.90626"
+       id="path47-7"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.30835;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#ArrowWideRounded-7-7);marker-end:url(#marker48-1-6)"
+       d="M 332.64908,487.67998 535.64262,419.41696"
+       id="path47-7-9"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="display:inline">
+    <rect
+       style="fill:#1dc689;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect2"
+       width="188.97638"
+       height="94.48819"
+       x="539.86884"
+       y="349.60641" />
+    <text
+       xml:space="preserve"
+       id="text3"
+       style="font-size:37.3333px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect4);display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       transform="translate(89.372148,27.169951)"><tspan
+         x="466.77148"
+         y="383.12059"
+         id="tspan4">FastAPI</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3"
+     style="display:inline">
+    <g
+       inkscape:groupmode="layer"
+       id="layer2-1-1-3-0"
+       inkscape:label="Layer 2"
+       transform="translate(-515.31077,196.53543)"
+       style="display:inline">
+      <rect
+         style="fill:#3b97f7;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         id="rect2-8-9-6-4"
+         width="188.97638"
+         height="94.48819"
+         x="654.57806"
+         y="251.33864" />
+      <text
+         xml:space="preserve"
+         id="text3-7-4-1-8"
+         style="font-size:34.6667px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect4-2-9-4-2);display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         transform="translate(199.18133,-72.610614)"><tspan
+           x="466.77148"
+           y="380.72671"
+           id="tspan5">Telegram</tspan></text>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer2-1-3-9-7"
+       inkscape:label="Layer 2"
+       transform="translate(-515.31077,-196.53544)"
+       style="display:inline">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         id="rect2-8-7-7-1"
+         width="188.97638"
+         height="94.48819"
+         x="654.57806"
+         y="447.87415" />
+      <text
+         xml:space="preserve"
+         id="text3-7-5-3-7"
+         style="font-size:37.3333px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font, Normal';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect4-2-0-2-9);display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         transform="translate(187.71317,123.14164)"
+         x="-208.26665"
+         y="0"><tspan
+           x="482.85978"
+           y="383.12059"
+           id="tspan6">Next.js</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2-1-1-3"
+     inkscape:label="Layer 2"
+     transform="translate(192.75591,196.53543)"
+     style="display:inline">
+    <rect
+       style="fill:#dd0055;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect2-8-9-6"
+       width="188.97638"
+       height="94.48819"
+       x="639.3515"
+       y="349.60641" />
+    <text
+       xml:space="preserve"
+       id="text3-7-4-1"
+       style="font-size:48px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect4-2-9-4);display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       transform="translate(194.87617,22.562137)"><tspan
+         x="466.77148"
+         y="392.69638"
+         id="tspan7">Redis</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2-1-3-9"
+     inkscape:label="Layer 2"
+     transform="translate(192.75591,-196.53544)"
+     style="display:inline">
+    <rect
+       style="fill:#1acdff;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect2-8-7-7"
+       width="188.97638"
+       height="94.48819"
+       x="639.3515"
+       y="349.60641" />
+    <text
+       xml:space="preserve"
+       id="text3-7-5-3"
+       style="font-size:26.6667px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect4-2-0-2);display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       transform="translate(186.50799,30.772353)"><tspan
+         x="466.77148"
+         y="373.54489"
+         id="tspan8">PostgreSQL</tspan></text>
+  </g>
+  <text
+     xml:space="preserve"
+     id="text42"
+     style="font-size:48px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect43);display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.88976;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+     transform="translate(-3.629904,-47.101132)"><tspan
+       x="122.11328"
+       y="130.31552"
+       id="tspan9">FrontEnd</tspan></text>
+  <text
+     xml:space="preserve"
+     id="text42-6"
+     style="font-size:48px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font, Normal';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect43-2);display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.88976;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+     transform="translate(572.93956,-47.101132)"><tspan
+       x="122.11328"
+       y="130.31552"
+       id="tspan10">BackEnd</tspan></text>
+</svg>
