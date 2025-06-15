@@ -14,6 +14,7 @@ from fastapi_cache.backends.redis import RedisBackend
 from fastapi.openapi.docs import get_swagger_ui_html
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from fastapi.middleware.httpsredirect import HTTPSRedirectMiddleware
+from apscheduler.schedulers.background import AsyncIOScheduler
 
 from core.config import settings
 from core.log import log
@@ -53,6 +54,8 @@ app = FastAPI(
 
 origins = []
 
+scheduler = AsyncIOScheduler()
+
 # Development origins
 if settings.ENVIRONMENT == 'development':
     origins.extend(
@@ -91,3 +94,8 @@ app.add_middleware(
     allow_methods=['*'],
     allow_headers=['*'],
 )
+
+
+@scheduler.sheduled_job(trigger="interval", days=1, next_run_time=datetime.now())
+async def top_users_mailing() -> None:
+    ...
